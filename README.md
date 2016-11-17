@@ -1,6 +1,9 @@
 # redux-setstate
 A `setState` api for purely functional components.
 
+### Installation
+`$ npm i -S redux-setstate`
+
 Example usage
 
 ``` Javascript
