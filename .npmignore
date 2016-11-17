@@ -1,0 +1,4 @@
+src
+.DS_STORE
+.npmignore
+gulpfile.js
