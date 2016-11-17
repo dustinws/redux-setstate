@@ -20,8 +20,6 @@ export default combineReducers({
 import React from 'react';
 import { configureState } from 'redux-setstate';
 
-const configureState = configureState('counter-app', {}, { count: 0 });
-
 export const App = ({ localState, setState }) => (
   <div>
     <h3>Count: {localState.count}</h3>
@@ -30,7 +28,12 @@ export const App = ({ localState, setState }) => (
   <div>
 );
 
-export default configureState(App);
+const actions = {};
+const initialState = {
+  count: 0,
+};
+
+export default configureState('counter-app', actions, initialState)(App);
 
 ```
 
