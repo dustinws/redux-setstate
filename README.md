@@ -40,4 +40,4 @@ export default configureState('counter-app', actions, initialState)(App);
 
 #### Api
 
-`configureState(namespace: string, actions: Object, initialState: any)`
+`configureState(namespace: string, [actions: Object, [initialState: any]]) => Component`
