@@ -18,9 +18,9 @@ export default combineReducers({
 
 // In MyComponent.js
 import React from 'react';
-import { SetState } from 'redux-setstate';
+import { configureState } from 'redux-setstate';
 
-const configureState = SetState('counter-app', {}, { count: 0 });
+const configureState = configureState('counter-app', {}, { count: 0 });
 
 export const App = ({ localState, setState }) => (
   <div>
@@ -33,3 +33,8 @@ export const App = ({ localState, setState }) => (
 export default configureState(App);
 
 ```
+
+
+#### Api
+
+`configureState(namespace: string, actions: Object, initialState: any)`

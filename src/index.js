@@ -1,9 +1,10 @@
 import reducer from './reducer';
-import SetState from './state';
+import configureState from './state';
 import { SET_STATE } from './actionTypes';
 
 export {
   reducer,
-  SetState,
+  configureState,
+  SetState: configureState,
   SET_STATE,
 };
