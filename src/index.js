@@ -1,9 +1,9 @@
 import reducer from './reducer';
-import state from './state';
+import SetState from './state';
 import { SET_STATE } from './actionTypes';
 
 export {
   reducer,
-  state,
+  SetState,
   SET_STATE,
 };
